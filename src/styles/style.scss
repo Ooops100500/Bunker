@@ -1,0 +1,132 @@
+.bunker {
+  max-width: 1320px;
+  margin: 10px auto;
+  &__block {}
+  &__form {}
+  &__characteristic {}
+  &__catastrophe,
+  &__AddInfo {
+    text-align: center;
+    font-size: 18px;
+
+    background-color: aliceblue;
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    min-height: 20px;
+    margin-bottom: 20px;
+    padding: 10px 0 10px 0;
+  }
+  &__AddInfo {}
+}
+.form {
+  border: 1px solid grey;
+  border-radius: 10px;
+
+  background-color: lightgray;
+  margin-bottom: 20px;
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__input {}
+  &__select {
+    display: flex;
+    flex-direction: column;
+    margin: 0 40px 0 0;
+    padding-top: 30px;
+  }
+  &__button {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.input {
+  &__block {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  &__block input {
+    border: 1px solid grey;
+    border-radius: 10px;
+
+    margin-bottom: 5px;
+    padding-left: 5px;
+    min-width: 900px;
+
+    text-align: center;
+    background-color: aliceblue;
+    color: black;
+    font-size: 15px;
+  }
+  &__call {
+    padding-bottom: 5px;
+
+    text-align: center;
+    font-size: 18px;
+  }
+}
+.select,
+.select__input{
+  font-size: 15px;
+  text-align: center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+
+  border: 1px solid grey;
+  border-radius: 5px;
+
+  margin-bottom: 20px;
+  min-width: 300px;
+  &__option {}
+  &__input {}
+  &__stage {
+    margin-bottom: 20px;
+  }
+  &__stage input {
+    width: 100px;
+  }
+  &__age {}
+  &__work {}
+  &__hobby {}
+  &__buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.select-button {
+  &__create {}
+  &__download {}
+  &__calc {}
+}
+.button {
+  border-radius: 10px;
+  border: 1px solid grey;
+
+  margin-bottom: 10px;
+  padding: 5px 10px;
+
+  text-align: center;
+  font-size: 16px;
+  background-color: aliceblue;
+  &__create {}
+  &__clear {}
+  &__download {}
+  &__bunker {
+    padding: 5px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .input {
+    display: none;
+  }
+  .form {
+    &__block {
+      justify-content: center;
+    }
+    &__select {
+      margin: 0;
+    }
+  }
+}
